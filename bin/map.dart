@@ -34,6 +34,14 @@ void main(){
   print(map1.containsValue(30)); // Returns true if the map contains the value 30
   print(map1.map((key, value) => MapEntry(key, value * 2))); // Returns a new map with the key-value pairs transformed by the function
 
+  // Map Methods
+  map1.update('one', (value) => value * 3); // Update the value of key 'one' to 3 times of its current value
+  map1.update('four', (value) => 4, ifAbsent: () => 0); // Update the value of key 'four' to 4 if it exists, otherwise add key-value pair 'four': 0
+  map1.updateAll((key, value) => value * 2); // Update all values of map to 2 times of their current values
+  map1.putIfAbsent('four', () => 4); // Add key-value pair 'four': 4 if it does not exist. Otherwise, return the value of key 'four'
+  map1.containsKey('four'); // Return true if map contains key 'four'
+  map1.containsValue(4); // Return true if map contains value 4
+
   // Iterating over Map
   map1.forEach((key, value) => print('$key: $value'));
 }
