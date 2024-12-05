@@ -4,7 +4,11 @@ void main(){
 
   // Map Declaration
   Map<String, int> map1 = {'one': 1, 'two': 2, 'three': 3};
-  var map2 = {'one': 1, 'two': 2, 'three': 3};
+  var map2 = {
+    'one': 1,
+    'two': 2,
+    'three': 3
+  };
 
   // Accessing Map Elements
   print(map1['one']); // 1
@@ -41,7 +45,16 @@ void main(){
   map1.putIfAbsent('four', () => 4); // Add key-value pair 'four': 4 if it does not exist. Otherwise, return the value of key 'four'
   map1.containsKey('four'); // Return true if map contains key 'four'
   map1.containsValue(4); // Return true if map contains value 4
+  var copiedMap = Map.from(map1); // Create a copy of map1
 
   // Iterating over Map
   map1.forEach((key, value) => print('$key: $value'));
+
+  // Convert Map to List
+  List<String> keys = map1.keys.toList(); // Convert keys of map to List
+  List<int> values = map1.values.toList(); // Convert values of map to List
+
+  // combine two map
+  Map<String, int> map3 = {'seven': 7, 'eight': 8, 'nine': 9};
+  map1.addAll(map3);
 }
