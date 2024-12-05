@@ -4,14 +4,16 @@ void main(){
 
   // Declaration of Set
   Set<String> names = {};
-  var names2 = {};
+  var names2 = <String>{}; // var names2 = {}; // This will create a Map not Set
   var names3 = <String>{'John', 'Doe', 'Smith'};
 
   // Accessing Set
   print(names3);
+  print(names3.elementAt(0)); // Access element by index
 
   // Add items to Set
   names.add('John');
+  names2.add('EHR');
   names.addAll({'Doe', 'Smith'});
 
   // Remove items from Set
