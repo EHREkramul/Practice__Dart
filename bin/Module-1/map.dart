@@ -9,6 +9,11 @@ void main(){
     'two': 2,
     'three': 3
   };
+  var map4 = <String, int>{
+    'one': 1,
+    'two': 2,
+    'three': 3
+  };
 
   // Accessing Map Elements
   print(map1['one']); // 1

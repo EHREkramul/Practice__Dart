@@ -1,6 +1,6 @@
 void main(){
   ///////// Set /////////
-  // Set is a collection of unique items. Set is an unordered collection of items.
+  // Set is a collection of unique items. Set is an unordered collection of items. All data must be same type by default.
 
   // Declaration of Set
   Set<String> names = {};

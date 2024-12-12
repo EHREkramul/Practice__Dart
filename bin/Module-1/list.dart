@@ -5,6 +5,7 @@ void main(){
   // List Declaration
   List<int> list1 = [1, 2, 3, 4, 5];
   var list2 = [1, 2, 3, 4, 5];
+  var list3 = <int>[1, 2, 3, 4, 5];
 
   // Accessing List Elements
   print(list1[0]); // 1
