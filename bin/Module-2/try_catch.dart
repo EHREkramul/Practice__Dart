@@ -8,5 +8,8 @@ void main(){
   }catch(e){
     print(e);
   }
+  finally{
+    print("It executes all time. If there is any error or not");
+  }
   print("Program is still running");
 }
