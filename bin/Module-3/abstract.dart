@@ -1,5 +1,5 @@
 abstract class Father{
-  // totalTaka(); // Valid. Must be implemented body into sub classes. Non-Abstract class can not have method without body
+  // totalTaka(); // Abstract Method. Must be implemented body into sub classes. Non-Abstract class can not have method without body
   totalTaka(){ // Implementation in child class is optional. by default this body will be used.
     print('Father\'s Money = 80,000');
   }
