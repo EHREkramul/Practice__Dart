@@ -3,7 +3,13 @@ void main(){
   print(multiplication(2,5));
   division(5,2);
   add(10, 20, "Addition is");
+  temp( b: 12.3);
 }
+
+temp({double? a, required double b}){ // Optional parameter in named parameter
+  print('$a and $b');
+}
+// temp2(double e =34, int d){} // Error. Default value can be only in named parameter.
 
 // return_type function_name (parameter list){Function body}
 //addition({required int a, required int b}) // Named parameter.
@@ -19,10 +25,12 @@ var division = (a,b) => {
 
 
 // Optional Parameter
-add(double x, double y, [String? description]){ // description is optional parameter
+add(double x, double y, [String? description]){ // description is optional parameter. // By default return type dynamic. Must use nullable type?
   if(description != null){
     print("$description: ${x+y}");
   }else{
     print("Add: ${x+y}");
   }
+  // return "String"; // ok
+  // return 123; // ok
 }
