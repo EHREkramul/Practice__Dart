@@ -1,0 +1,20 @@
+Future<void> main() async {
+  print('Just Started');
+
+  Future.delayed(Duration(seconds: 2), (){
+    print('Run after 2 seconds');
+  });
+
+  await perform();
+  print('After all run');
+}
+
+Future<void> perform() async{
+  print('Function Starts');
+
+  await Future.delayed(Duration(seconds: 3), (){
+    print('Function Await');
+  });
+
+  print('Function End');
+}
