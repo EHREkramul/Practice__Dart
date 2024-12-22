@@ -7,6 +7,11 @@ Future<void> main() async {
 
   await perform();
   print('After all run');
+  isValidToVote(15);
+
+}
+bool isValidToVote(int age){
+  return age>=18?true:false;
 }
 
 Future<void> perform() async{
