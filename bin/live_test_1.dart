@@ -5,7 +5,8 @@ void main(){
 }
 void calculateAreaOfTriangle() {
   // If we Take User Input
-  /*stdout.write('Enter the Base of Triangle: ');
+  /*
+  stdout.write('Enter the Base of Triangle: ');
   double base = double.tryParse(stdin.readLineSync()!) ?? 10.00; // Use 10 as default value if the input is invalid
 
   stdout.write('Enter the Height of Triangle: ');
