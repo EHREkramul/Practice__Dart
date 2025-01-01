@@ -1,9 +1,9 @@
 import 'dart:io';
 
 void main(){
-  calculateAreaOfTriangle();
+  triangle();
 }
-void calculateAreaOfTriangle() {
+void triangle() {
   // If we Take User Input
   /*
   stdout.write('Enter the Base of Triangle: ');
