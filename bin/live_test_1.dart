@@ -1,5 +1,25 @@
-import 'package:live_test_1/live_test_1.dart' as live_test_1;
+import 'dart:io';
 
-void main(List<String> arguments) {
-  print('Hello world: ${live_test_1.calculate()}!');
+void main(){
+  calculateAreaOfTriangle();
+}
+void calculateAreaOfTriangle() {
+  // Take User Input
+  stdout.write('Enter the Base of Triangle: ');
+  double base = double.tryParse(stdin.readLineSync()!) ??
+      10.00; // Use 10 as default value if the input is invalid
+
+  stdout.write('Enter the Height of Triangle: ');
+  double height = double.tryParse(stdin.readLineSync()!) ??
+      10.00; // Use 10 as default value if the input is invalid
+
+  // Calculate Area of Triangle
+  double area = 0.5 * base * height;
+
+  print('Base of Triangle is: $base');
+  print('Height of Triangle is: $height');
+
+  // Print Area
+  print('Area of Triangle is: ${area.toStringAsFixed(
+      2)}'); // Print 2 digit after point
 }
